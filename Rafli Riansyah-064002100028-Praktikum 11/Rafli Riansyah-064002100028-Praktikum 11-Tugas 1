@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Dec  6 15:00:56 2021
+
+@author: Rafli_Riansyah
+NAMA : Rafli Riansyah
+NIM : 064002100028
+
+"""
+class mahasiswa:
+    
+   def __init__(self,nama,angkatan,nim):
+        
+        self.nama = nama
+        self.nim = nim
+        self.angkatan = angkatan
+        
+   def biodata_mahasiswa(self):
+       print("\nnama kamu adalah : ",self.nama)
+       print("nim kamu adalah : ",self.nim)
+       print("angkatan kamu adalah : ",self.angkatan)
+       
+nama = str(input("masukan nama mu : "))
+nim = str(input("masukan nim kamu : "))
+angkatan = str(input("masukan angkatan kamu: "))
+
+biodata = mahasiswa(nama,angkatan,nim)
+biodata.biodata_mahasiswa()
